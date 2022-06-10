@@ -1,0 +1,479 @@
+/* Improts */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+
+
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+
+
+/* Variables */
+:root {
+    --red-color: #A30000;
+    --black-color: #000;
+    --grey-obscure: #333333;
+    --grey-littleDark: #999999;
+    --grey-soft: #cccccc;
+}
+
+
+
+/* Navegacion */
+
+.nav {
+    width: 100%;
+    min-height: 5em;
+    padding: 0rem 5rem 0rem 5rem;
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fffdf7;
+    padding: 0 2.5rem;
+    transition: all 1s;
+}
+
+.nav__link--logo {
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #fdb833;
+    letter-spacing: .02em;
+}
+
+#chek, .checkbtn {
+    display: none;
+}
+
+/* ./Navegacion */
+
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/photo-1554344728-7560c38c1720.avif") no-repeat top / cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5em;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #090909;
+    filter: opacity(90%);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+}
+
+.header__titulo {
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: #fffdf7;
+    text-align: center;
+    letter-spacing: .03em;
+    line-height: .9em;
+    padding-top: .15em;
+}
+
+.header__titulo span {
+    color: #fdb833;
+    font-size: 9.5rem;
+    padding-left: .15em;
+}
+
+.header__subtitulo span {
+    color: #fdb833;
+}
+
+.header__subtitulo {
+    width: 100%;
+    color: #fffdf7;
+    font-weight: 200;
+    font-size: 1.8rem;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: .9rem;
+}
+
+.banner__bootn--header {
+    width: 100%;
+    text-align: right;
+    padding: 1em 1em 0 0;
+}
+
+/* ./Header */
+
+
+
+
+/* banner */
+
+.main {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.banner__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6em;
+    text-align: center;
+}
+
+.banner__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 20;
+}
+
+.banner__container--black {
+    background-color: #090909;
+}
+
+.banner__container--fondo2 {
+    background: url("../img/edgar-chaparro-sHfo3WOgGTU-unsplash\ \(1\).jpg") ;
+    background-position: top center;
+    background-size: cover;
+}
+
+.banner__container--fondo1 {
+    background: url("../img/sushil-ghimire-5UbIqV58CW8-unsplash.jpg") ;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner__container--fondo1:before, .banner__container--fondo2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    filter: opacity(80%);
+    background-color: #090909;
+    z-index: 10; 
+}
+
+.banner__discount {
+    width: 4.5em;
+    min-height: 5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fdb833;
+    border-radius: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.banner__discount  i {
+    font-size: 3rem;
+    color: #fffdf7;
+}
+
+.banner__title {
+    color: #fffdf7;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.banner__text {
+    color: #fffdf7;
+    font-size: 1.2rem;
+    font-weight: 200;
+    max-width: 75%;
+    padding: 1.6em 0;
+    text-align: center;
+}
+
+.banner__text span {
+    color: #fdb833;
+}
+
+.banner__boton {
+    background-color: transparent;
+    border: none;
+    color: #fdb833;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: lowercase;    
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.banner__boton:hover {
+    transform: scale(1.1);
+    letter-spacing: .3rem;
+}
+
+.banner__boton i {
+    padding: 0 0 0 .8em;
+}
+
+/* ./banner */
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #070707;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__content {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 60px; 
+    grid-template-areas: 
+    ". . . ."
+    "buttom buttom buttom buttom"; 
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em 0em;
+}
+
+.footer__h2 {
+    color: #fdb833;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.footer__h2--logo {
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #fdb833;
+    padding: 0 0rem;
+    line-height:.9em;
+}
+
+.footer__p {
+    color: #fffdf7;
+    font-size: 1.2rem;
+    font-weight: 200;
+    max-width: 60%;
+    padding: .5em 0;
+    word-spacing: .1em;
+}
+
+.footer__p--logo {
+    color: #fffdf7;
+    font-size: .85rem;
+    font-weight: 200;
+    max-width: 50%;
+    padding: .5em 0;
+}
+
+footer span {
+    color: #fdb833;
+}
+
+.footer__buttom {
+    background-color: #fdb833;
+    grid-area: buttom;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: center;
+    padding: 0 2em;
+}
+
+.footer__p--buttom {
+    color: #373937;
+}
+
+.rs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rs span {
+    color: #373937;
+    padding: 0 .8em;
+}
+
+
+
+/* Responsive */
+
+/* MOBILE */
+
+/* TABLET */
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+
+
+    .main {
+        height: 150vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+    
+    .header__titulo {
+        font-size: 5rem;
+    }
+    
+    .header__subtitulo {
+        font-size: 1em;
+        letter-spacing: .2rem;
+    }
+
+    .section {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .section__img:before {
+        height: 50vh;
+    }
+
+}
+
+@media (max-width: 576px) {
+    /*ACÁ LO ÚNICO QUE PONGO ES LO QUE CAMBIA SI ACHICO LA PANTALLA. EN ESTE CASO, SOLO CAMBIO LA DISPOSICIÓN DEL CONTENIDO PARA QUE VAYA UN ELEMENTO DEBAJO DEL OTRO */
+    .main {
+        height: 150vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+    
+    .header__titulo {
+        font-size: 3rem;
+    }
+    
+    .header__subtitulo {
+        font-size: .9em;
+        letter-spacing: .2rem;
+    }
+
+    .section {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .section__img:before {
+        height: 50vh;
+    }
+
+    .banner__discount {
+        width: 45px;
+        height: 45px;
+    }
+
+    .banner__discount i {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .nav__list {
+        display: none;
+
+    }
+
+    .nav__item {
+        display: block;
+        padding: .5em 0 .5em 0;
+    }
+
+    .checkbtn {
+        display: flex;
+        position: absolute;
+        color: white;
+        font-size: 1em;
+        right: 10px;
+        top: 5px;
+    }
+
+    #chek:checked ~ .nav__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        background: linear-gradient(145deg, #373937, #2e302e);
+    }
+
+    }
+
+/* ./Responsive */
