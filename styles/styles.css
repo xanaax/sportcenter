@@ -74,7 +74,7 @@
 
 /* Titulos */
 .title {
-    font-size: 9em;
+    font-size: 8em;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--color-blanco);
@@ -91,6 +91,9 @@
 .title--section {
     font-size: 4em;
 }
+
+
+
 /* titulos */
 
 
@@ -117,6 +120,35 @@
 /* botones */
 
 
+
+/* nav */
+
+.nav {
+    z-index: 1000;
+    position: absolute;
+    min-height: 10vh;
+}
+
+.nav__li {
+    padding: 0 2em;
+}
+
+.nav__a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.nav__a--title {
+    color: var(--color-amarillo);
+    font-size: 2.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* nav */
 
 
 /* header */
@@ -338,7 +370,7 @@
     }
 
     .section__img {
-        width: 14rem;
+        width: 12rem;
     }
     
     .section__img:hover {
@@ -346,17 +378,12 @@
     }
     
     .section__cuadrado {
-        width: 13rem;
-        height: 20rem;
-    }
-
-
-    .section__img {
-        min-width: 14rem;
+        width: 10rem;
+        height: 15rem;
     }
 
     .min-vh-50 {
-        min-height: 100vh;
+        min-height: 150vh;
     }
 }
 
@@ -365,16 +392,18 @@
     .p {
         font-size: 1rem;
         margin: 0rem 2.5rem;
+        padding: .8rem 0;
     }
 
     .p--header {
-        font-size: .85em;
+        font-size: .65em;
         margin: 0;
         letter-spacing: .2em;
+        padding: 0;
     }
 
     .title {
-        font-size: 4em;
+        font-size: 3.2em;
     }
 
     .title--banner {
@@ -383,20 +412,21 @@
 
     .button {
         letter-spacing: .2rem; 
-        font-size: 1em;
+        font-size: .8em;
     }
 
     .section__img {
-        width: 12rem;
+        width: 8rem;
     }
     
     .section__img:hover {
-        width: 13rem;
+        width: 9rem;
     }
     
     .section__cuadrado {
-        width: 12rem;
-        height: 17rem;
+        width: 7rem;
+        height: 12rem;
+        transform: translate(50px, -50px);
     }
 
     .title--section {
@@ -404,7 +434,7 @@
     }
 
     .min-vh-50 {
-        min-height: 100vh;
+        min-height: 150vh;
     }
 
 
