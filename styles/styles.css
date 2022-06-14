@@ -23,7 +23,12 @@
 }
 
 .back-negro {
-    background-color: var(--color-negro);
+    background: url('../img/back.svg') center / cover;
+}
+
+.text-lineal {
+    -webkit-text-stroke: 1px var(--color-amarillo);
+  color: transparent; 
 }
 
 .min-vh-50 {
@@ -31,7 +36,7 @@
 }
 
 .vh-100-sp {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .sobra-negra:before {
@@ -59,7 +64,10 @@
 }
 
 .p--section {
-    width: 75%;
+    width: 90%;
+    text-align: left;
+    padding: 0;
+    margin: 3rem 0;
 }
 
 .p--header {
@@ -89,7 +97,8 @@
 }
 
 .title--section {
-    font-size: 4em;
+    font-size: 5em;
+    text-align: left;
 }
 
 
@@ -123,7 +132,7 @@
 
 /* nav */
 
-.nav {
+.navbar {
     z-index: 1000;
     position: absolute;
     min-height: 10vh;
@@ -169,28 +178,56 @@
 /* section */
 
 .section__img {
-    width: 20rem;
+    position: relative;
+    width: 45rem;
     z-index: 1000;
     border-radius: 1em 1em 1em 0em;
     transition:all .8s ease;
+    padding: 0 2rem 0 0;
 }
 
-.section__img:hover {
-    width: 21rem;
-    filter: drop-shadow(20px 100px 50px #080808);
+/* .section__img:hover {
+    width: 45.5rem;
+    filter: drop-shadow(20px 20px 50px #080808);
+} */
+
+.gradient {
+    position: relative;
 }
 
-.section__cuadrado {
-    background: linear-gradient(to right bottom, rgb(248, 241, 163), rgb(253, 224, 71), rgb(234, 179, 8));
+.gradient::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-negro);
+    opacity: 0%;
+    z-index: 1000;
+    transform: translateX(-1000px);
+    transition: 1.2s all ease;
+}
+
+.gradient:hover::after {
+    content: "Hola mundo";
+    opacity: 80%;
+    transform: translateX(0);
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/* .section__cuadrado {
+    background: #eee;
     transform: translate(75px, -75px);
     z-index: 50;
     width: 20rem;
     height: 30rem;
-}
+} */
 
 /* section */
-
-
 
 /* banner */
 
@@ -410,6 +447,10 @@
         font-size: 1.5em;
     }
 
+    .title--section {
+        font-size: 2em;
+    }
+
     .button {
         letter-spacing: .2rem; 
         font-size: .8em;
@@ -427,10 +468,6 @@
         width: 7rem;
         height: 12rem;
         transform: translate(50px, -50px);
-    }
-
-    .title--section {
-        font-size: 2em;
     }
 
     .min-vh-50 {
