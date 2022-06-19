@@ -34,6 +34,10 @@
     min-height: 90vh;
 }
 
+.min-vh-80 {
+    min-height: 55vh;
+}
+
 .sobra-negra:before {
     content: "";
     position: absolute;
@@ -42,7 +46,7 @@
     width: 100%;
     height: 100%;
     background-color: #090909;
-    filter: opacity(90%);
+    filter: opacity(80%);
 
     z-index: 10;
 }
@@ -69,8 +73,17 @@
     font-size: 1.8em;
     letter-spacing: .4rem;
     text-transform: uppercase;
-    padding: 0 0;
+    padding: 0;
+    margin: 0;
 }
+
+.p--card {
+    color: var(--color-amarillo);
+    padding-top: 1.2rem;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
 /* textos - subtitulos */
 
 
@@ -89,6 +102,11 @@
 
 .title--banner {
     font-size: 2.5em;
+}
+
+.title--emepzar {
+    font-size: 6em;
+    padding: 1.8rem 0;
 }
 
 .title--section {
@@ -129,27 +147,7 @@
 
 .navbar {
     z-index: 1000;
-    position: absolute;
-    min-height: 10vh;
-}
-
-.nav__li {
-    padding: 0 2em;
-}
-
-.nav__a {
-    color: var(--color-blanco);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 200;
-    text-transform: capitalize;
-}
-
-.nav__a--title {
-    color: var(--color-amarillo);
-    font-size: 2.3em;
-    font-weight: 800;
-    text-transform: uppercase;
+    min-height: 8vh;
 }
 
 /* nav */
@@ -160,6 +158,10 @@
 .header {
     background: url("../img/background.jpg") no-repeat right / cover fixed;
     z-index: -1;
+}
+
+.header--empezar {
+    background: url("../img/samantha-gades-k95uqdEe8R4-unsplash.jpg") no-repeat right / cover;
 }
 
 .header__content {
@@ -180,27 +182,9 @@
     padding: 0 2rem 0 0;
 }
 
-.gradient {
-    position: relative;
-}
-
-.gradient::after {
-    content: "";
-    /* width: 100%; */
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-negro);
-    opacity: 40%;
-    z-index: 1000;
-    transition: 1.2s all ease;
-}
-
 /* section */
 
 /* banner */
-
 .banner {
     background-color: var(--color-negro);
     z-index: -1;
@@ -217,13 +201,37 @@
 .banner--fondo1 {
     background: url("../img/banner2.jpg") no-repeat center / cover;
 }
-
 /* banner */
+
+/* card */
+
+.cardsp {
+    width: 23rem;
+    height: 38rem;
+    background-color: var(--color-blanco);
+    border-radius: .8rem;
+}
+
+.cardsp__img {
+    width: 18rem;
+}
+
+/* card */
+
+
 
 /* footer */
 
 .footer {
     background-color: var(--color-negro);
+}
+
+.footer__bottom {
+    background-color: var(--color-amarillo);
+}
+
+.footer__top {
+    min-height: 30vh;
 }
 
 /* footer */

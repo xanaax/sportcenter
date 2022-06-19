@@ -1,153 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio | SportCenter</title>
 
-    <!--  CSS -->
-    <link rel="stylesheet" href="./styles/styles.css"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | SportCenter</title>
 
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!--  CSS -->
+  <link rel="stylesheet" href="./styles/styles.css" />
 
-    <!-- Bostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </head>
-  <body>
+  <!-- Bostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
 
-    <!-- Navegacion -->
-    <!-- <nav class="navbar navbar-expand-lg">
+<body>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa-solid fa-arrow-down"></span>
+  <!-- Nav -->
+  <nav class="navbar position-fixed w-100 navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand active" aria-current="page" href="./index.html">SPORTCENTER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav__ul d-flex align-items-center justify-content-center">
-          <li class="nav-item dropdown">
-            <a class="nav__item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./views/empezar.html">Empezar</a>
           </li>
-          <li class="nav__li"><a href="" class="nav__a">Alquilar</a></li>
-          <li class="nav__li"><a href="" class="nav__a">Inscribirse</a></li>
-          <li class="nav__li"><a href="" class="nav__a nav__a--title">sportcenter</a></li>
-          <li class="nav__li"><a href="" class="nav__a">Sobre Nosotros</a></li>
-          <li class="nav__li"><a href="" class="nav__a">Contacto</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./views/alquilar.html">Alquilar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./views/sobre_nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./views/contacto.html">Contacto</a>
+          </li>
         </ul>
       </div>
-    </nav> -->
+    </div>
+  </nav>
 
 
-    <!-- header -->
-    <header class="header sobra-negra container-fluid bg-dark">
-      <div class="row min-vh-100">
-        <div class="header__content col-12 d-flex align-items-center justify-content-center flex-column text-center">
-          <p class = "p p--header">entrenarse - <span class = "amarillo">entretenerse</span> - educarse</p>
-          <h2 class="title title--header">
-            <span>Un gimnasio</span> 
-            <br />
-            <span>a tu <span class = "amarillo">alcance</span></span>
-          </h2>
-          <button class="button">
-            <span>Mas Informacion</span>   
-            <i class="button__i fa-solid fa-arrow-down"></i>
-          </button>
-        </div>
+  <!-- header -->
+  <header class="header sobra-negra container-fluid">
+    <div class="row min-vh-100">
+      <div class="header__content col-12 d-flex align-items-center justify-content-center flex-column text-center">
+        <p class="p p--header">entrenarse - <span class="amarillo">entretenerse</span> - educarse</p>
+        <h2 class="title title--header">
+          <span>Un gimnasio</span>
+          <br />
+          <span>a tu <span class="amarillo">alcance</span></span>
+        </h2>
+        <button class="button">
+          <span>Mas Informacion</span>
+          <i class="button__i fa-solid fa-arrow-down"></i>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Main -->
-    <main class = "main">
+  <!-- Main -->
+  <main class="main">
 
-      <section class="container-fluid">
-        <div class="row min-vh-50">
-          <div class="banner banner--fondo1 sobra-negra position-relative col-12 col-lg-4 d-flex align-items-center justify-content-center flex-column text-center">
-            <div class="banner__content">
-              <h3 class="title title--banner">Planes de adaptacion</h3>
-              <p class="p">Lorem ipsum dolor <span class = "amarillo">sit amet consectetur</span> adipisicing elit. Consectetur iure quo, vero minima accusamus<span class = "amarillo">harum dolores!</span> Repellat error illum sint!</p>
-              <button class="button">
-                <span>Mas Informacion</span>   
-                <i class="button__i fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-          <div class="banner col-12 col-lg-4 d-flex align-items-center justify-content-center flex-column text-center">
-            <div class="banner__content">
-              <h3 class="title title--banner">Planes de adaptacion</h3>
-              <p class="p">Lorem ipsum dolor <span class = "amarillo">sit amet consectetur</span> adipisicing elit. Consectetur iure quo, vero minima accusamus<span class = "amarillo">harum dolores!</span> Repellat error illum sint!</p>
-              <button class="button">
-                <span>Mas Informacion</span>   
-                <i class="button__i fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-          <div class="banner banner--fondo2 sobra-negra position-relative col-12 col-lg-4 d-flex align-items-center justify-content-center flex-column text-center">
-            <div class="banner__content">
-              <h3 class="title title--banner">Planes de adaptacion</h3>
-              <p class="p">Lorem ipsum dolor <span class = "amarillo">sit amet consectetur</span> adipisicing elit. Consectetur iure quo, vero minima accusamus<span class = "amarillo">harum dolores!</span> Repellat error illum sint!</p>
-              <button class="button">
-                <span>Mas Informacion</span>   
-                <i class="button__i fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container-fluid back-negro">
-        <div class="row vh-100-sp">
-          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center position-relative">
-            <div class="section__cuadrado position-absolute"></div>
-            <div class="gradient">
-              <img src="./img/photo-1584863231364-2edc166de576.avif" alt="" class="section__img img-fluid">
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column" >
-            <h4 class="title title--section">
-              <span> <span class = "text-lineal">Somos</span> mucho mas</span> </br>
-              <span>que un <span class  = "amarillo">gimnacio</span></span>
-            </h4>
-            <p class="p p--section">Lorem ipsum dolor sit amet <span class = "amarillo">consectetur adipisicing elit</span> . Provident illum asperiores <span class = "amarillo">alias facere magnam</span>, recusandae itaque perspiciatis porro nihil aut debitis fuga officiis consectetur neque. <span class = "amarillo">Fugit incidunt ab facere dolorum voluptatum</span> , doloremque eos, eligendi aut expedita ipsa, vitae dolorem deleniti.</p>
-            <button class="button text-right">
-              <span>Mas Informacion</span>   
+    <section class="container-fluid">
+      <div class="row min-vh-50">
+        <div
+          class="banner banner--fondo1 sobra-negra position-relative col-12 col-lg-4 d-flex align-items-center justify-content-center flex-column text-center">
+          <div class="banner__content">
+            <h3 class="title title--banner">Planes de adaptacion</h3>
+            <p class="p">Lorem ipsum dolor <span class="amarillo">sit amet consectetur</span> adipisicing elit.
+              Consectetur iure quo, vero minima accusamus<span class="amarillo">harum dolores!</span> Repellat error
+              illum sint!</p>
+            <button class="button">
+              <span>Mas Informacion</span>
               <i class="button__i fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
-      </section>
-
-    </main>
-
-    
-    <!-- footer -->
-    <footer class="footer container-fluid">
-      <div class="row ">
-        <div class="col-12">
-          <p class="p">© 2022 derechos reservados a sportcenter SA</p>
+        <div class="banner col-12 col-lg-4 d-flex align-items-center justify-content-center flex-column text-center">
+          <div class="banner__content">
+            <h3 class="title title--banner">Planes de adaptacion</h3>
+            <p class="p">Lorem ipsum dolor <span class="amarillo">sit amet consectetur</span> adipisicing elit.
+              Consectetur iure quo, vero minima accusamus<span class="amarillo">harum dolores!</span> Repellat error
+              illum sint!</p>
+            <button class="button">
+              <span>Mas Informacion</span>
+              <i class="button__i fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="banner banner--fondo2 sobra-negra position-relative col-12 col-lg-4 d-flex align-items-center justify-content-center flex-column text-center">
+          <div class="banner__content">
+            <h3 class="title title--banner">Planes de adaptacion</h3>
+            <p class="p">Lorem ipsum dolor <span class="amarillo">sit amet consectetur</span> adipisicing elit.
+              Consectetur iure quo, vero minima accusamus<span class="amarillo">harum dolores!</span> Repellat error
+              illum sint!</p>
+            <button class="button">
+              <span>Mas Informacion</span>
+              <i class="button__i fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="container-fluid back-negro">
+      <div class="row vh-100-sp">
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center position-relative">
+          <div class="section__cuadrado position-absolute"></div>
+          <div class="gradient">
+            <img src="./img/photo-1584863231364-2edc166de576.avif" alt="" class="section__img img-fluid">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+          <h4 class="title title--section">
+            <span> <span class="text-lineal">Somos</span> mucho mas</span> </br>
+            <span>que un <span class="amarillo">gimnasio</span></span>
+          </h4>
+          <p class="p p--section">Lorem ipsum dolor sit amet <span class="amarillo">consectetur adipisicing elit</span>
+            . Provident illum asperiores <span class="amarillo">alias facere magnam</span>, recusandae itaque
+            perspiciatis porro nihil aut debitis fuga officiis consectetur neque. <span class="amarillo">Fugit incidunt
+              ab facere dolorum voluptatum</span> , doloremque eos, eligendi aut expedita ipsa, vitae dolorem deleniti.
+          </p>
+          <button class="button text-right">
+            <span>Mas Informacion</span>
+            <i class="button__i fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  <!-- footer -->
+  <footer class="footer container-fluid">
+    <div class="row footer__top d-flex align-items-center text-center">
+      <div class="col-xl-3 col-lg-6 col-sm-12">
+        <h5 class='title title-footer'>sportcenter</h5>
+        <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-sm-12">
+        <h5 class='subtitle subtitle--footer'>sportcenter</h5>
+        <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-sm-12">
+        <h5 class='subtitle subtitle--footer'>sportcenter</h5>
+        <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-sm-12">
+        <h5 class='subtitle subtitle--footer'>sportcenter</h5>
+        <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 footer__bottom">
+        <p class="p">© 2022 derechos reservados a sportcenter SA</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

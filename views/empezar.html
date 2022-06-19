@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,92 +10,124 @@
     <!--  CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <!-- font Awemose -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
+
 <body>
 
-    <!-- Navegacion -->
-    <nav class = "nav">
-        <div class="nav__logo">
-            <h1> <a class = "nav__link nav__link--logo" href="../index.html">SportCenter</a> </h1>
+    <!-- Nav -->
+    <nav class="navbar position-fixed w-100 navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">SPORTCENTER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../views/empezar.html">Empezar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/alquilar.html">Alquilar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/sobre_nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <input type="checkbox" id="chek">
-        <label for="chek" class = "checkbtn">
-          <i class = "fa-brands fa-gripfire"></i>
-        </label>  
-        
-        <ul class = "nav__list">
-            <li class = "nav__item"><a class = "nav__link" href="alquilar.html">Alquilar</a></li>
-            <li class = "nav__item"><a class = "nav__link" href="empezar.html">Empezar</a></li>
-            <li class = "nav__item"><a class = "nav__link" href="sobre_nosotros.html">Sobre nosotros</a></li>
-            <li class = "nav__item"><a class = "nav__link" href="contacto.html">Contacto</a></li>
-        </ul>
     </nav>
 
-
     <!-- Header -->
-    <header class = "header">
-        <div class = "header__content">
-            <h2 class = "header__titulo">Conoce nuestros <span>planes</span></h2>
-            <p class = "header__subtitulo">Los mejores precios que podras encontrar</p>
-            <div class = "header__keydown">
-                
-            </div> 
+    <header class="header position-relative header--empezar container-fluid bg-dark">
+        <div class="row sobra-negra min-vh-80">
+            <div
+                class="header__content col-12 d-flex align-items-center justify-content-center flex-column text-center">
+                <p class="p p--header"> los mejores <span class="amarillo">precios</span> del la ciudad</p>
+                <h2 class="title title--emepzar">
+                    <span>Conoce nuestros</span>
+                    <br />
+                    <span> planes <span class="amarillo"> mensuales</span></span>
+                </h2>
+                <button class="button">
+                    <span>Inscribete ya</span>
+                    <i class="button__i fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Main -->
+    <main class="main vh-100-sp d-flex align-items-center justify-content-center">
+        <div class="main__contenedor">
+            <div class="cardsp d-flex align-items-center justify-content-around flex-column">
+                <div class="cardsp__top">
+                    <img src="../img/undraw_healthy_habit_bh-5-w (1).svg" alt="" class="cardsp__img">
+                    <p class='p p--card text-center'>Mensual</p>
+                </div>
 
-    <main class = "main">
-        <div class = "main__titulo">
-            <h3>Planes</h3>
-        </div>
-        <div class = "main__contenedor">
-            <div class="card">
-                <h1 class = "card__titulo">Titulo del plan</h1>
-                <ul class = "card__list">
-                    <li class = "card__items">Item 1</li>
-                    <li class = "card__items">Item 2</li>
-                    <li class = "card__items">Item 3</li>
-                    <li class = "card__items">Item 4</li>
+                <ul class="cardsp__list">
+                    <li class="cardsp__item">Entrenamiento personalizado</li>
+                    <li class="cardsp__item">Entrenamiento personalizado</li>
+                    <li class="cardsp__item">Entrenamiento personalizado</li>
+                    <li class="cardsp__item">Entrenamiento personalizado</li>
                 </ul>
+
+                <div class="cardsp__bottom">
+                    <button class="cardsp__buton">Inscribirme</button>
+                </div>
             </div>
-            <div class="card">
-                <h1 class = "card__titulo">Titulo del plan</h1>
-                <ul class = "card__list">
-                    <li class = "card__items">Item 1</li>
-                    <li class = "card__items">Item 2</li>
-                    <li class = "card__items">Item 3</li>
-                    <li class = "card__items">Item 4</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h1 class = "card__titulo">Titulo del plan</h1>
-                <ul class = "card__list">
-                    <li class = "card__items">Item 1</li>
-                    <li class = "card__items">Item 2</li>
-                    <li class = "card__items">Item 3</li>
-                    <li class = "card__items">Item 4</li>
-                </ul>
-            </div>
-        </div>
     </main>
-    
-    <footer class="footer">Copyright SportCenter</footer>
+
+    <!-- Footer -->
+    <footer class="footer container-fluid">
+        <div class="row footer__top d-flex align-items-center text-center">
+            <div class="col-xl-3 col-lg-6 col-sm-12">
+                <h5 class='title title-footer'>sportcenter</h5>
+                <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-sm-12">
+                <h5 class='subtitle subtitle--footer'>sportcenter</h5>
+                <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-sm-12">
+                <h5 class='subtitle subtitle--footer'>sportcenter</h5>
+                <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-sm-12">
+                <h5 class='subtitle subtitle--footer'>sportcenter</h5>
+                <p class='p p--footer'>Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 footer__bottom">
+                <p class="p">© 2022 derechos reservados a sportcenter SA</p>
+            </div>
+        </div>
+
+    </footer>
 
 
 
 
-
-
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
