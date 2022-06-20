@@ -147,8 +147,6 @@
     text-align: left;
 }
 
-
-
 /* titulos */
 
 
@@ -178,17 +176,35 @@
 
 
 /* nav */
-
 .navbar {
     z-index: 1000;
     min-height: 8vh;
 }
 
+.nav-link-juan {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fffdf7;
+    padding: 0 2.5rem;
+    transition: all 1s;
+}
+
+.nav-brand-juan {
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--color-amarillo);
+    letter-spacing: .02em;
+}
+
 /* nav */
 
 
-/* header */
 
+/* header */
 .header {
     background: url("../img/background.jpg") no-repeat right / cover fixed;
     z-index: -1;
@@ -207,8 +223,8 @@
 
 
 
-/* section */
 
+/* section */
 .section__img {
     position: relative;
     width: 45rem;
@@ -218,6 +234,8 @@
 }
 
 /* section */
+
+
 
 /* banner */
 .banner {
@@ -239,19 +257,28 @@
 
 /* banner */
 
+
 /* card */
 .cardsp {
-    width: 20rem;
-    height: 35rem;
-    background-color: var(--color-blanco);
-    border-radius: 8px;
+    width: 350px;
+    height: 550px;
+    background-color: var(--color-amarillo);
+    border-radius: 4%;
 }
 
-.cardsp--amarilla {
-    background-color: var(--color-amarillo);
-    width: 25rem;
-    height: 38rem;
-    padding: 0;
+.cardsp__top {
+    min-height: 30%;
+    background-color: var(--color-blanco);
+}
+
+.cardsp__content {
+    min-height: 50%;
+    background-color: aqua;
+}
+
+.cardsp__footer {
+    min-height: 20%;
+    background-color: antiquewhite;
 }
 
 /* card */
@@ -280,11 +307,16 @@
 }
 
 /* footer */
+
+
+/* rrs */
 .rss__li {
     padding: 0 2rem;
     color: var(--color-amarillo);
     font-size: 1.4rem;
 }
+
+/* rrs */
 
 
 /* custom scrollbar */
@@ -308,6 +340,7 @@
 }
 
 /* custom scrollbar */
+
 
 
 /* Responsive */
@@ -367,7 +400,7 @@
         font-weight: 900;
         color: var(--color-amarillo);
     }
-    
+
     .title--foter2 {
         font-size: 1.5em;
     }
@@ -439,7 +472,7 @@
         font-weight: 900;
         color: var(--color-amarillo);
     }
-    
+
     .title--foter2 {
         font-size: 1.5em;
     }
@@ -512,7 +545,7 @@
         font-weight: 900;
         color: var(--color-amarillo);
     }
-    
+
     .title--foter2 {
         font-size: 1.5em;
     }
@@ -570,7 +603,7 @@
         font-weight: 900;
         color: var(--color-amarillo);
     }
-    
+
     .title--foter2 {
         font-size: 1.2em;
     }
