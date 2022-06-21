@@ -260,7 +260,7 @@
 
 /* card */
 .cardsp {
-    width: 350px;
+    width: 1px;
     height: 550px;
     background-color: var(--color-amarillo);
     border-radius: 4%;

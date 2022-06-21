@@ -1,0 +1,22 @@
+/* nav */
+.navbar {
+    z-index: 1000;
+    min-height: 8vh;
+}
+
+.nav-link-juan {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: map-get($colores, blanco);
+    padding: 0 2.5rem;
+    transition: all 1s;
+}
+
+.nav-brand-juan {
+    font-weight: 800;
+}
+
+/* nav */

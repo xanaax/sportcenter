@@ -1,0 +1,19 @@
+.footer {
+
+    background-color: var(--color-negro);
+
+    &__bottom {
+        background-color: var(--color-negro);
+        min-height: 7vh;
+    }
+    
+    &__footerline {
+        background-color: var(--color-amarillo);
+        min-height: .3rem;
+    }
+    
+    &__top {
+        background-color: var(--color-negro);
+        min-height: 40vh;
+    }
+}

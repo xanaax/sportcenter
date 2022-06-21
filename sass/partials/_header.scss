@@ -1,0 +1,14 @@
+.header {
+    background: url("../img/background.jpg") no-repeat right / cover fixed;
+    z-index: -1;
+
+    &--empezar {
+        background: url("../img/samantha-gades-k95uqdEe8R4-unsplash.jpg") no-repeat right / cover;
+    }
+    
+    &__content {
+        z-index: 100;
+    }
+}
+
+
