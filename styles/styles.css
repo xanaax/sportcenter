@@ -266,6 +266,13 @@
     border-radius: 4%;
 }
 
+.card__title {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-amarillo);
+}
+
 .cardsp__top {
     min-height: 30%;
     background-color: var(--color-blanco);
