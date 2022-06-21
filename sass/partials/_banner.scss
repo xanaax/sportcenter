@@ -1,0 +1,16 @@
+.banner {
+    background-color: var(--color-negro);
+    z-index: -1;
+
+    &__content {
+        z-index: 1000;
+    }
+
+    &--fondo2 {
+        background: url("../img/banner1.jpg") no-repeat center / cover;
+    }
+
+    &--fondo1 {
+        background: url("../img/banner2.jpg") no-repeat center / cover;
+    }
+}

@@ -1,0 +1,25 @@
+.cardsp {
+
+
+    height: 550px;
+    width: 350px;
+    background-color: var(--color-amarillo);
+    border-radius: 4%;
+
+
+    &__top {
+        min-height: 30%;
+        background-color: var(--color-blanco);
+    }
+    
+    &__content {
+        min-height: 50%;
+        background-color: aqua;
+    }
+    
+    &__footer {
+        min-height: 20%;
+        background-color: antiquewhite;
+    }
+
+}
