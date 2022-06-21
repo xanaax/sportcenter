@@ -10,17 +10,13 @@
     font-weight: 100;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: #fffdf7;
+    color: map-get($colores, blanco);
     padding: 0 2.5rem;
     transition: all 1s;
 }
 
 .nav-brand-juan {
     font-weight: 800;
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: var(--color-amarillo);
-    letter-spacing: .02em;
 }
 
 /* nav */

@@ -1,7 +1,7 @@
 /* custom scrollbar */
 * {
     scrollbar-width: auto;
-    scrollbar-color: #fdb533 #fffdf7;
+    scrollbar-color: map-get($colores , amarillo ) map-get($colores, blanco);
 }
 
 *::-webkit-scrollbar {
@@ -13,9 +13,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #fdb533;
+    background-color: map-get($colores, amarillo);
     border-radius: 10px;
-    border: 4px solid #ffffff;
+    border: 4px solid map-get($colores, blanco );
 }
 
 /* custom scrollbar */

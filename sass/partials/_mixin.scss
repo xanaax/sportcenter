@@ -1,0 +1,6 @@
+@mixin parrafos {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: map-get($colores, blanco);
+    margin: 1.3rem 4rem;
+}

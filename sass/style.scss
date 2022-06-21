@@ -12,13 +12,6 @@
     overflow-x: hidden;
 }
 
-/* Variables */
-:root {
-    --color-amarillo: #fdb833;
-    --color-blanco: #fffdf7;
-    --color-negro: #090909;
-}
-
 @import './partials/banner';
 @import './partials/buton';
 @import './partials/cards';
@@ -27,9 +20,12 @@
 @import './partials/nav';
 @import './partials/scrollbar';
 @import './partials/header';
+@import './partials/maps';
+@import './partials/mixin';
+@import './partials/exnted';
 
 .amarillo {
-    color: var(--color-amarillo);
+    color: map-get($colores, amarillo);
 }
 
 .background-negro {
@@ -73,17 +69,12 @@
 
 /* Textos - subtitulos */
 .p {
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: var(--color-blanco);
-    /* max-width: 65%; */
-    margin: 1.3rem 4rem;
+    @include parrafos
 }
 
 .p--section {
     width: 85%;
     text-align: left;
-    padding: 0;
     margin: 2rem 0;
 }
 
@@ -91,14 +82,13 @@
     font-size: 1.8em;
     letter-spacing: .4rem;
     text-transform: uppercase;
-    padding: 0;
     margin: 0;
 }
 
 .p--footer {
     font-size: 1.2em;
     font-weight: 100;
-    color: var(--color-blanco);
+    color: map-get($colores, amarillo);
     margin: 1rem 0;
 }
 
@@ -108,9 +98,8 @@
 }
 
 .p--card {
-    color: var(--color-amarillo);
+    color: map-get($colores, amarillo);
     padding-top: 1.2rem;
-    font-size: 1.5em;
     font-weight: 400;
 }
 
@@ -120,23 +109,18 @@
 
 /* Titulos */
 .title {
-    font-size: 8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--color-blanco);
+    @extend %titulos;
 }
 
 .title-footer {
     font-size: 2em;
     font-weight: 900;
-    color: var(--color-amarillo);
+    color: map-get($colores, amarillo);
 }
 
 .title--foter2 {
     font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: .1em;
-    color: var(--color-amarillo);
+    @extend %titulos;
 }
 
 .title--header {
@@ -176,7 +160,7 @@
 /* rrs */
 .rss__li {
     padding: 0 2rem;
-    color: var(--color-amarillo);
+    color: map-get($colores, amarillo);
     font-size: 1.4rem;
 }
 
