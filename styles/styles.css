@@ -77,6 +77,12 @@
     margin: 2rem 0;
 }
 
+.p--sobrenosotros {
+    text-align: center;
+    padding: 0;
+    margin: 0 0;
+}
+
 .p--header {
     font-size: 1.8em;
     letter-spacing: .4rem;
@@ -145,6 +151,11 @@
 .title--section {
     font-size: 5em;
     text-align: left;
+}
+
+.title--sobrenosotros {
+    font-size: 3.5em;
+    text-align: center;
 }
 
 /* titulos */
@@ -329,6 +340,67 @@
 }
 
 /* rrs */
+
+.section--team {
+    width: 100%;
+}
+
+.w-80 {
+    width: 100%;
+}
+
+.cardteam {
+    position: relative;
+    min-height: 13em;
+    margin: .8em 0;
+    border-radius: 50px;
+    background-color: #070707;
+    transition: .4s all ease;
+}
+
+.cardteam:hover {
+    min-height: 13.2em;
+    box-shadow:  10px 10px 5px #060606,
+            -10px -10px 5px #080808;
+}
+
+.cardteam__circle {
+    width: 6em;
+    min-height: 6em;
+    border-radius: 100%;
+    background: url("../img/people1.avif") no-repeat center / cover;
+    /* outline: 1em solid var(--color-negro);
+    transition: .4s all ease; */
+}
+
+.cardteam__title {
+    color: var(--color-blanco);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.cardteam__subtitle {
+    color: var(--color-blanco);
+    font-size: 1em;
+    opacity: .5;
+    font-weight: 300;
+}
+
+.cardteam__top {
+    width: 100%;
+    height: 50%;
+}
+
+.cardteam__footer {
+    width: 100%;
+    height: 20%;
+}
+
+/* .cardteam__circle:hover {
+    width: 6.3em;
+    min-height: 6.3em;
+    outline: 1.2em solid var(--color-negro);
+} */
 
 
 /* custom scrollbar */
